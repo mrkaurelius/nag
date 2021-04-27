@@ -11,9 +11,7 @@ from keras.optimizers import SGD
 
 (trainX, trainY), (testX, testY) = cifar10.load_data()
 # one hot encode target values
-print(type(trainY))
-print(trainY)
-trainY = to_categorical(trainY)
-testY = to_categorical(testY)
-print(trainY)
-print(type(trainY))
+trainY_bin_class = to_categorical(trainY)
+testY_bin_class = to_categorical(testY)
+
+pass
